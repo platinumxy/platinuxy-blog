@@ -1,0 +1,11 @@
+home:
+  image: 'images/profile.jpg'
+  greetings: 'Hack the Planet!'
+  text: 'Info-Sec enthusiast.'
+side:
+  home:
+  - title:
+    content: 'Find me on <a href="https://github.com/platinumxy">GitHub</a>'
+    
+  - title: 'Media Support'
+    content: 'Side content can have images!'
