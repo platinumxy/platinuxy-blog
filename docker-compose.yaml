@@ -1,0 +1,13 @@
+name: mysite
+
+services:
+  server:
+    image: hugomods/hugo:exts-non-root
+    command: server -D -p 12421 --disableFastRender --disableLiveReload --minify 
+    volumes:
+      - ./:/src
+      - ~/hugo_cache:/tmp/hugo_cache
+    ports:
+      - 12421:12421
+    environment:
+      - HUGO_ENV=production
