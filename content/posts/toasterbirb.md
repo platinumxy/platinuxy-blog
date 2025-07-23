@@ -246,7 +246,7 @@ if s.check() == sat:
 
 to give us a finished solve script
 
-```bash
+```text
 $ ./interrupted $(python solve.py)
 the password was correct!
 ```
@@ -267,8 +267,10 @@ $ ./box
      |
      v
 ```
+
 Putting pretty much anything in as our input, we get the following:
-```
+
+```text
 $ ./box
      +---- aaaaa
      |
@@ -347,7 +349,7 @@ Next we get to the first call to `transform_(4|5)` both of which's behaviour is 
 and with that we are now able to implement the mixing algorithm in python to check if our understanding and dynamic analysis was correct [click here to see the code](/posts/toasterbirb/box/solve.py).
 Sure enough our python implementation manages to create the same outputs as the binary, so all we have to do now is write the inverse and tada we've got the key
 
-```
+```text
 $ python solve.py
 a l g a k r w u
 m v a u u g r v
